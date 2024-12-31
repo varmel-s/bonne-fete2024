@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonne Année</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image-section">
+            <img src="votre-image.jpg" alt="Bonne Année" id="greetingImage">
+        </div>
+        <div class="card">
+            <h1>Bonne Année 2024/2025 🎉</h1>
+            <p id="message">Je te souhaite une merveilleuse année pleine de bonheur et de succès !</p>
+            <form id="form">
+                <label for="senderName">Ton noms :</label>
+                <input type="text" id="senderName" placeholder="Ton nom" required>
+                <label for="receiverName">Nom de l'ami(e) :</label>
+                <input type="text" id="receiverName" placeholder="Nom de ton ami(e)" required>
+                <button type="submit">Personnaliser</button>
+            </form>
+            <div id="customMessage" class="hidden">
+                <p id="outputMessage"></p>
+                <button id="reset">Réinitialiser</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        Développé par <strong>BSVarmel / BiosBSV_Tech</strong>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
